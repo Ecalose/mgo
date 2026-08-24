@@ -1,6 +1,6 @@
 module github.com/gospider007/mgo
 
-go 1.26.0
+go 1.27.0
 
 require (
 	github.com/gospider007/bar v0.0.0-20260428065104-305d919b2224
