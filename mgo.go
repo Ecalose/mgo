@@ -818,11 +818,6 @@ func (obj *Table) clearTable(preCtx context.Context, Func any, tag string, clear
 	jtT := time.Second * 60
 	idFilter := map[string]ObjectID{}
 	if !clearOption.Oid.IsZero() {
-		if lgteInt == 1 {
-			clearOption.Oid = ObjectIDFromHexWithTime(clearOption.Oid, -jtT)
-		} else {
-			clearOption.Oid = ObjectIDFromHexWithTime(clearOption.Oid, jtT)
-		}
 		idFilter[lgte] = clearOption.Oid
 	}
 	if lgteInt == 1 {
